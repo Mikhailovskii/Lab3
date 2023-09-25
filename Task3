@@ -1,0 +1,9 @@
+sentence = input("Введіть речення: ")
+
+words = sentence.split()
+
+# розподіл слів за  довжиною у порядку неспадання
+sorted_words = sorted(words, key=len)
+
+for word in sorted_words:
+    print(word)
